@@ -23,7 +23,7 @@ jobs:
           if [ ! -d ~/app ]; then
             git clone https://github.com/${{ github.repository }}.git ~/app
           fi
-          cd ~/app
+          cd ~/app/app/
           git pull origin main
           python3 -m pip install --upgrade pip
           python3 -m pip install -r requirements.txt
